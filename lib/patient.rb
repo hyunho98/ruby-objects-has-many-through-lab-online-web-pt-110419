@@ -22,4 +22,9 @@ class Patient
       appointments.patient == self}
   end
 
+  def doctors
+    appointments.collect{|appointments|
+      appointments.doctor}
+  end
+
 end
