@@ -14,7 +14,7 @@ class Genre
   end
 
   def songs
-    Song.all.collect{|songs|
+    Song.all.select{|songs|
       songs.genre == self}
   end
 
